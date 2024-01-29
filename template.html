@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receipt</title>
+<style>
+  .underline {
+    border-bottom: dashed 2px gray;
+    text-decoration: none;
+    padding: 0 30px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .receipt-container {
+    border: 5px double black;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 800px;
+    height: 500px;
+  }
+  .center {
+    text-align: center;
+  }
+  .justify-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .red-text {
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+    color: red;
+    font-size: 20px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .receipt-header {
+    background-color: red;
+    border-radius: 50px;
+    padding: 0 20px;
+    display: inline-block;
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    font-weight: 700;
+  }
+  .lastLeft{
+    flex:4;
+    padding-right: 180px;
+    margin: 0px 0px 0.35em;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 0.00938em;
+    font-size: 12px;
+  }
+
+  .lastRight{
+    flex:3;
+    padding-left: 40px;
+    margin: 0px 0px 0.35em;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 12px;
+  }
+
+  .trustDetails{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 12px
+  }
+
+  .templateFields{
+    margin: 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+  }
+  .template{
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="receipt-container">
+  <div class="center">
+    <h6 class="receipt-header bold">Receipt</h6>
+  </div>
+
+  <div class="justify-between">
+    <div>
+      <h6 class="red-text">THE LIFE ETERNAL TRUST</h6>
+      <p class="trustDetails">C-17, Qutub Institutional Area,<br> New Delhi - 110016</p>
+      <p class="trustDetails">Mob : 7065088873 Ph : 011-26866801</p>
+      <p class="trustDetails">Email : contributions@thelet.org</p>
+    </div>
+    <div>
+      <p style="margin: 0; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif; font-weight: 400; font-size: 1rem; line-height: 1.5; letter-spacing: 0.00938em;">Invoice #12345</p>
+      <p style="margin: 0px;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      font-size: 12px;">Date: 2023-12-18</p>
+    </div>
+  </div>
+
+  <div class="italic template">
+    <p class="templateFields">Received with thanks from Mr./Ms./M/s : <span class="underline">AMIT SAINI</span></p>
+    <div class="justify-between">
+      <p class="templateFields">PAN / Aadhaar : <span class="underline">665334016681</span></p>
+      <p class="templateFields">Mobile : <span class="underline">9829545897</span></p>
+      <p class="templateFields">Email : <span class="underline">lks@gmail.com</span></p>
+    </div>
+    <p class="templateFields">Address : <span class="underline">NEAR SARAWAGI GUEST HOUSE, Jaipur, Rajasthan - 333031</span></p>
+    <p class="templateFields">a sum of Rupees : <span class="underline">Rupees: Three Thousand Nine Hundred Only</span></p>
+    <div class="flex-column">
+      <p class="templateFields">Payment Mode : <span class="underline">UPI</span></p>
+      <p class="templateFields">Res Number : <span class="underline">rfc22w84700</span></p>
+    </div>
+  </div>
+
+  <h6 style="margin: 15px 0 15px 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;">Amount: $35.00</h6>
+
+  <div class="justify-between last">
+    <p class="lastLeft">Exempted u/s 80G Vide Letter Issued by Director of Income Tax (Exemptions), Delhi-110092 Order No. AAATT0493JF20214 Renewed for AY 2022-23 to AY 2026-27 Trust PAN No. AAATT0493J * Subject to Encashment of Cheque * Cash donation above rupees 2000 not entitled for tax benefit</p>
+    <p class="lastRight">For The Life Eternal Trust<br>"This is system generated Receipt, it does not require signature"</p>
+  </div>
+</div>
+
+
+</body>
+</html>
