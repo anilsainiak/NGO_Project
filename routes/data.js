@@ -19,6 +19,7 @@ convertAmounttoWords=(amount)=>{
 
 //ADD
 router.post("/add",async (req,res)=>{
+    try{
     const newData=new Data({
         receiptNumber:req.body.receiptNumber,
         name:req.body.name,
@@ -30,7 +31,6 @@ router.post("/add",async (req,res)=>{
         amount:req.body.amount
     });
     const amountinWords=convertAmounttoWords(newData.amount);
-    try{
         
         const transporter=nodemailer.createTransport(
             {
