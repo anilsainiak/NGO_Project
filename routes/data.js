@@ -90,7 +90,7 @@ router.post("/add",async (req,res)=>{
 //GET ALL
 router.get("/view",async (req,res)=>{
     try{
-        const data=await Data.find();
+        const data=await Data.find().sort({receiptNumber:1});
         res.status(200).json(data);
     }catch(err){
         res.status(500).json(err);
@@ -106,7 +106,5 @@ router.get('/view/:id',async (req,res)=>{
         res.status(500).json(err);
     }
 })
-
-
 
 module.exports=router;
